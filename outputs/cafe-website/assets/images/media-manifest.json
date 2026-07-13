@@ -1,0 +1,86 @@
+[
+  {
+    "sourceFile": "source/0a04e79ffeae14b33037a4a5a52dd705.jpg",
+    "kind": "space-original",
+    "personFree": true,
+    "allowedEdits": ["crop", "resize", "exposure-and-white-balance-correction", "platform-watermark-removal"],
+    "productionUse": "candidate"
+  },
+  {
+    "sourceFile": "source/222eb3e3f1e62eaa2fe58cb2dcc6e17d.jpg",
+    "kind": "space-original",
+    "personFree": true,
+    "allowedEdits": ["crop", "resize", "exposure-and-white-balance-correction", "platform-watermark-removal"],
+    "productionUse": "candidate"
+  },
+  {
+    "sourceFile": "source/288bcee7e6de99e46b18f9a9ecd114bb.jpg",
+    "kind": "space-original",
+    "personFree": true,
+    "allowedEdits": ["crop", "resize", "exposure-and-white-balance-correction", "platform-watermark-removal"],
+    "productionUse": "candidate"
+  },
+  {
+    "sourceFile": "source/38b4a13d22c181e3900f02816d41f7ab.jpg",
+    "kind": "menu-original",
+    "personFree": true,
+    "allowedEdits": ["crop", "resize", "color-and-exposure-correction", "platform-watermark-removal"],
+    "productionUse": "candidate"
+  },
+  {
+    "sourceFile": "source/4be2d78b3ccf87a3ade76aab5201c902.jpg",
+    "kind": "space-original",
+    "personFree": true,
+    "allowedEdits": ["crop", "resize", "exposure-and-white-balance-correction", "platform-watermark-removal"],
+    "productionUse": "candidate"
+  },
+  {
+    "sourceFile": "source/5c901d5e62d3d50bc2dd969b00703106.jpg",
+    "kind": "space-original",
+    "personFree": true,
+    "allowedEdits": ["crop", "resize", "exposure-and-white-balance-correction", "platform-watermark-removal"],
+    "productionUse": "candidate"
+  },
+  {
+    "sourceFile": "source/ca14a014db3bf18055d6b2d63da2bfc1.jpg",
+    "kind": "space-original",
+    "personFree": true,
+    "allowedEdits": ["crop", "resize", "exposure-and-white-balance-correction", "platform-watermark-removal"],
+    "productionUse": "candidate"
+  },
+  {
+    "sourceFile": "source/0e447ffc9d03f2d83cd3f67258f869a0.jpg",
+    "kind": "menu-screenshot",
+    "personFree": true,
+    "allowedEdits": ["crop-for-internal-reference", "annotation-for-menu-transcription"],
+    "productionUse": "reference-only"
+  },
+  {
+    "sourceFile": "source/4f9141a4d02e56d9675698488ef3944b.jpg",
+    "kind": "menu-screenshot",
+    "personFree": true,
+    "allowedEdits": ["crop-for-internal-reference", "annotation-for-menu-transcription"],
+    "productionUse": "reference-only"
+  },
+  {
+    "sourceFile": "source/9465cc0a851a8663f22b8965ddfa5a2a.jpg",
+    "kind": "menu-screenshot",
+    "personFree": true,
+    "allowedEdits": ["crop-for-internal-reference", "annotation-for-product-and-menu-reference"],
+    "productionUse": "reference-only"
+  },
+  {
+    "sourceFile": "source/1.jpg",
+    "kind": "brand-sign-screenshot",
+    "personFree": true,
+    "allowedEdits": ["crop-brand-sign-for-extraction", "perspective-correction", "background-removal-for-mark-extraction"],
+    "productionUse": "reference-only"
+  },
+  {
+    "sourceFile": "source/c101ffeef6a4051e54081891d67dfdeb.jpg",
+    "kind": "menu-screenshot",
+    "personFree": true,
+    "allowedEdits": ["crop-for-internal-reference", "annotation-for-product-and-menu-reference"],
+    "productionUse": "reference-only"
+  }
+]
