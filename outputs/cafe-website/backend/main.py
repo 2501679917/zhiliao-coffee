@@ -98,16 +98,6 @@ def create_reservation(reservation: ReservationCreate):
             connection.close()
 
 
-@app.get("/api/reservations")
-def get_reservations():
-    connection = get_db()
-    try:
-        rows = connection.execute("SELECT * FROM reservations ORDER BY created_at DESC").fetchall()
-        return [dict(row) for row in rows]
-    finally:
-        connection.close()
-
-
 init_db()
 FRONTEND_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
