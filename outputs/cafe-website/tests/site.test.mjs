@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
 const html = await readFile(new URL('index.html', root), 'utf8');
@@ -24,7 +24,20 @@ test('uses local brand and full menu dialog', () => {
   assert.match(html, /id=["']full-menu-dialog["']/);
 });
 test('removes unrelated and inaccurate legacy content', () => {
-  assert.doesNotMatch(html, /images\.unsplash\.com|09:00|20:00|e0906b3667e9ca1af43c14730ca2c81b/);
+  assert.doesNotMatch(html, /images\.unsplash\.com|09:00|20:00|e0906b3667e9ca1af43c14730ca2c81b|户外木露台|私密木屋包间/);
+});
+test('every referenced local image exists', async () => {
+  const paths = [...html.matchAll(/(?:src|href)=["'](assets\/images\/[^"']+)["']/g)].map((match) => match[1]);
+  assert.ok(paths.length > 8);
+  await Promise.all(paths.map((path) => access(new URL(path, root))));
+});
+test('interaction modules expose accessible contracts', async () => {
+  const gallery = await readFile(new URL('assets/js/gallery.js', root), 'utf8');
+  const menu = await readFile(new URL('assets/js/menu-dialog.js', root), 'utf8');
+  const reservation = await readFile(new URL('assets/js/reservation.js', root), 'utf8');
+  assert.match(gallery, /export function initGallery|pointermove|pointerleave|keydown|aria-expanded/);
+  assert.match(menu, /export function initMenuDialog|showModal\(\)|close\(\)|focus\(\)/);
+  assert.match(reservation, /export function initReservationForm|AbortController|10000|\/api\/reservations/);
 });
 test('menu exports exact verified names and prices', async () => {
   const items = await menuItems();
