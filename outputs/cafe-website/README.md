@@ -1,6 +1,7 @@
 # 知了 COFFEE
 
-知了 COFFEE 的品牌展示与预约网站。门店位于成都市武侯区玉林街 2 号民沁苑 2 栋 4 单元 1 层 1 号，营业时间为 11:00–18:30。
+知了 COFFEE 的品牌展示与预约网站
+https://6a5ed90249125feaedd5d5d1--harmonious-banoffee-6547fb.netlify.app/
 
 ## 设计与素材原则
 
